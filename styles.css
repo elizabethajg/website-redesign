@@ -72,24 +72,24 @@ nav ul {
 
 nav li {
   padding: 1vw;
-  border-bottom: solid 2px #799462;
+  border-bottom: solid 2px #586845;
   font-size: 4vw;
 }
 
 a {
   text-decoration: none;
-  color: #799462;
+  color: #586845;
 }
 
 button {
-  border: solid #799462;
+  border: solid #586845;
   padding: 3vw;
   background-color: white;
-  box-shadow: 10px 10px #799462;
+  box-shadow: 10px 10px #586845;
 }
 
 button a {
-  color: #799462;
+  color: #586845;
   font-size: 3vw;
 }
 
@@ -439,7 +439,7 @@ table td:last-child {
 }
 
 .contact form button {
-  color: #799462;
+  color: #586845;
   text-transform: uppercase;
   font-size: 3vw;
   font-weight: 400;
