@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Gallery</title>
+  </head>
+  <body>
+    <header class="home">
+      <img src="images/logo.png" alt="logo" />
+      <h1>GALLERY</h1>
+    </header>
+
+    <nav>
+        <div class="menu-label">
+            <h3>Menu</h3>
+            <span id="menu-bars"><a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a></span>
+        </div>
+      <ul id="nav-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="gallery">
+      <span class="gallery-section" id="ourWork">OUR WORK</span>
+      <div class="gallery-container">
+        <img src="images/juan-burgos-cgJhvCQOuA4-unsplash.jpg" />
+        <img src="images/juan-burgos-zu81IWwIhGM-unsplash.jpg" />
+        <img src="images/luca-lago-l0terNwFfBQ-unsplash.jpg" />
+        <img src="images/soroush-zargar-WW6RxBYqLqA-unsplash.jpg" />
+        <img src="images/wilhelm-gunkel-7mckf-8RF9o-unsplash.jpg" />
+        <img src="images/malcolm-lightbody-_CemZEpLJHY-unsplash.jpg" />
+        <img src="images/marcus-urbenz-TgFkyGATC4Q-unsplash.jpg" />
+        <img src="images/marie-bellando-mitjans-1ZquM1n8G2M-unsplash.jpg" />
+        <img src="images/nick-fewings-0LoN8WMGDvY-unsplash.jpg" />
+        <img src="images/pexels-rostislav-uzunov-5011647.jpg" />
+        <img src="images/michael-dziedzic-sF876cCSPrY-unsplash.jpg" />
+        <img src="images/mr-great-heart-1VsA6vwTsKU-unsplash (1).jpg" />
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <span class="hours">
+          <h6>Open Hours</h6>
+          <ul>
+            <li>Weekdays 9-5</li>
+            <li>Saturday 9-12</li>
+            <li>Closed Sunday</li>
+          </ul>
+        </span>
+        <span class="address">
+          <h6>Visit Us</h6>
+          <ul>
+            <li>1234 Road Rd.</li>
+            <li>City, Province</li>
+            <li>ABC 123</li>
+          </ul>
+        </span>
+        <span class="footer-contact">
+          <h6>Get in Touch</h6>
+          <ul>
+            <li>(999)-999-999</li>
+            <li>valleyglasswork@email.com</li>
+          </ul>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

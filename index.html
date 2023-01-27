@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Valley Glasswork</title>
+  </head>
+  <body>
+    <header class="home">
+      <img src="images/logo.png" alt="logo" />
+      <h1 id="homeHeader">VALLEY GLASSWORK</h1>
+    </header>
+
+    <nav>
+      <div class="menu-label">
+        <h3>Menu</h3>
+        <span id="menu-bars"
+          ><a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a
+        ></span>
+      </div>
+      <ul id="nav-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="home">
+      <div class="wrapper">
+        <div class="horizontal-home">
+          <div class="images">
+            <img src="images/ethan-hoover-UqFA9Oa0Jek-unsplash.jpg" alt="stained glass artwork" />
+            <img src="images/gaelle-marcel-720f6XT65tg-unsplash.jpg" alt="stained glass artwork" />
+          </div>
+          <h2>The region's one stop shop for glasswork artists</h2>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+          legendos at vix ad putent.
+        </p>
+        <span class="buttons">
+          <button type="button">
+            <a href="#">SHOP INVENTORY</a>
+          </button>
+          <button type="button">
+            <a href="contact.html">REQUEST REPAIR</a>
+          </button>
+        </span>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <span class="hours">
+          <h6>Open Hours</h6>
+          <ul>
+            <li>Weekdays 9-5</li>
+            <li>Saturday 9-12</li>
+            <li>Closed Sunday</li>
+          </ul>
+        </span>
+        <span class="address">
+          <h6>Visit Us</h6>
+          <ul>
+            <li>1234 Road Rd.</li>
+            <li>City, Province</li>
+            <li>ABC 123</li>
+          </ul>
+        </span>
+        <span class="footer-contact">
+          <h6>Get in Touch</h6>
+          <ul>
+            <li>(999)-999-999</li>
+            <li>valleyglasswork@email.com</li>
+          </ul>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

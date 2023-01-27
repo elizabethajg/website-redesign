@@ -1,2 +1,1 @@
-# website-redesign
-Redesigned glasswork website
+A redesigned static website representing a local business

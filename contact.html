@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header class="home">
+      <img src="images/logo.png" alt="logo" />
+      <h1>CONTACT US</h1>
+    </header>
+
+    <nav>
+      <div class="menu-label">
+        <h3>Menu</h3>
+        <span id="menu-bars"
+          ><a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a
+        ></span>
+      </div>
+      <ul id="nav-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="contact">
+      <div class="contact-wrapper">
+        <div class="company-info">
+          <h4>VALLEY GLASSWORK</h4>
+          <ul>
+            <li><i class="fa fa-road"></i>&ensp;1234 Road Rd.</li>
+            <li><i class="fa fa-phone"></i>&ensp;(999) 999-9999</li>
+            <li><i class="fa fa-envelope"></i>&ensp;valleyglasswork@email.com</li>
+            <li><i class="fa fa-clock-o"></i>&ensp;Weekdays 9-5 <br>&nbsp;&emsp; Saturday 9-12 <br>&nbsp;&nbsp;&emsp;Closed Sunday</li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h4>GET IN TOUCH</h4>
+          <form method="post" action="mailto:valleyglasswork@email.com">
+            <p>
+              <label for="First name">First name</label>
+              <input type="text" id="firstname" name="firstname" required />
+            </p>
+            <p>
+              <label for="Last name">Last name</label>
+              <input type="text" id="lastname" name="lastname" />
+            </p>
+            <p>
+              <label for="Email">Email</label>
+              <input type="text" id="email" name="email" required />
+            </p>
+            <p>
+              <label for="Phone number">Phone number</label>
+              <input type="text" id="phone" name="phone" required />
+            </p>
+            <p class="full">
+              <label for="Message">Message</label>
+              <input
+                type="text"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              />
+            </p>
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <span class="hours">
+          <h6>Open Hours</h6>
+          <ul>
+            <li>Weekdays 9-5</li>
+            <li>Saturday 9-12</li>
+            <li>Closed Sunday</li>
+          </ul>
+        </span>
+        <span class="address">
+          <h6>Visit Us</h6>
+          <ul>
+            <li>1234 Road Rd.</li>
+            <li>City, Province</li>
+            <li>ABC 123</li>
+          </ul>
+        </span>
+        <span class="footer-contact">
+          <h6>Get in Touch</h6>
+          <ul>
+            <li>(999)-999-999</li>
+            <li>valleyglasswork@email.com</li>
+          </ul>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

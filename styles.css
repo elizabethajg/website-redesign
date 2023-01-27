@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;700&family=Quicksand:wght@200;300;400;500;700&display=swap");
+
+/* Styles applied to entire website */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1a4d86;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  padding: 0 4vw;
+  justify-content: space-evenly;
+}
+
+p {
+  font-size: 18px;
+}
+
+header h1 {
+  font-family: "quicksand", sans-serif;
+  margin: 0;
+  color: #1a4d86;
+  font-weight: 300;
+  margin-left: 4vw;
+  width: 80vw;
+  font-size: 8vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4vw;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+}
+
+nav li {
+  padding: 1vw;
+  border-bottom: solid 2px #799462;
+  font-size: 4vw;
+}
+
+a {
+  text-decoration: none;
+  color: #799462;
+}
+
+button {
+  border: solid #799462;
+  padding: 3vw;
+  background-color: white;
+  box-shadow: 10px 10px #799462;
+}
+
+button a {
+  color: #799462;
+  font-size: 3vw;
+}
+
+/*Nav styles*/
+
+.show-items {
+  display: flex;
+}
+
+nav .toggle {
+  align-self: flex-start;
+  position: absolute;
+  cursor: pointer;
+}
+
+.menu-label {
+  width: 85vw;
+  font-size: 4vw;
+  padding-bottom: 3vw;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.menu-label h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.menu-label span {
+  width: fit-content;
+  font-size: 5vw;
+}
+
+/*Footer styles*/
+footer {
+  color: white;
+  overflow: auto;
+  padding: 1em;
+  width: 100%;
+  background-color: #1a4d86;
+  margin: 30px 0 0 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer span {
+  width: 30vw;
+}
+
+footer .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer ul {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+footer li {
+  line-height: 1.5;
+}
+footer h6 {
+  font-size: 2.5vw;
+  color: white;
+  margin: 0;
+  padding: 1vw 0;
+  font-weight: 700;
+}
+
+footer p{
+  font-size: 12px;
+  max-width: 90vw;;
+}
+/*End of styles applied to entire website */
+
+/*Styles for gallery*/
+
+
+.gallery-container {
+  line-height: 0;
+  column-count: 2;
+  column-gap: 1vw;
+}
+.gallery-container img {
+  border-radius: 3px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1vw;
+}
+.gallery-section {
+  width: 90%vw;
+  border-bottom: 3px solid #1a4d86;
+  color: #1a4d86;
+  text-align: center;
+  padding: 1vh;
+  margin: 3vh 0;
+  font-size: 4vw;
+}
+
+/*End of styles for gallery*/
+
+/*Styles for index.html*/
+
+header {
+  padding: 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header img {
+  object-fit: contain;
+  height: 15vw;
+}
+
+main.home > * {
+  display: contents;
+}
+
+header .home {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home h2 {
+  font-size: 7vw;
+  font-weight: 400;
+  margin: 4vw 0;
+}
+.home p {
+  margin: 0;
+  width: 70vw;
+}
+
+.home .images {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+}
+
+.home .images img {
+  width: 25vw;
+  object-fit: contain;
+  --s: 2.5vw; /* control the size */
+  padding: var(--s);
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20vw;
+  margin: 5vw 0 5vw 0;
+}
+/*End of styles applied to index.html*/
+
+/*Styles applied to classes.html*/
+
+div.class-photos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2vh;
+}
+
+div.class-info {
+  padding-top: 1vw;
+}
+
+.cards {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  box-sizing: border-box;
+  gap: 0.5vw;
+  width: 91vw;
+  height: 60vw;
+}
+
+.cards h3 {
+  position: relative;
+  bottom: 50%;
+  margin: 0;
+  color: white;
+  font-size: 7vw;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.cards img {
+  border-radius: 8px;
+  height: 260px;
+}
+
+table caption {
+  margin: 0;
+  font-size: 1.5em;
+  color: #1a4d86;
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+  margin-top: 6vw;
+}
+
+table th {
+  font-size: 1vw;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+}
+
+table thead {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+table tr {
+  border-bottom: 3px solid #1a4d86;
+  display: block;
+  margin-bottom: 0.625em;
+  padding: 0.34em;
+  padding-left: 0;
+}
+
+table td {
+  border-bottom: 1px solid #1a4d86;
+  display: block;
+  font-size: 0.8em;
+  text-align: right;
+  padding-left: 0;
+}
+
+table td::before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table td:last-child {
+  border-bottom: 0;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up p {
+  font-size: 16px;
+}
+
+/*End of styles applied to classes.html*/
+
+/*Styles applied to contact.html*/
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.company-info {
+  border-block: inherit;
+  border-bottom: 2px solid #1a4d86;
+  margin: 3vw;
+}
+
+.contact h4,
+.company-info ul {
+  color: #1a4d86;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  font-size: 4vw;
+}
+
+.company-info ul {
+  font-weight: 300;
+}
+
+.contact {
+  background: white;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin: 3vw;
+}
+
+.contact h4 {
+  margin: 0 0 5vw 0;
+  font-weight: 400;
+}
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4vw;
+  row-gap: 6vw;
+}
+
+.contact form label {
+  font-weight: 300;
+  text-transform: uppercase;
+  display: block;
+  font-size: 2.5vw;
+  margin-bottom: 4vw;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 2.5vw 0;
+  border: solid 1px #1a4d86;
+  border-radius: 4px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  color: #799462;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 400;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #1a4d86;
+  color: white;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+/*End of styles applied to contact.html*/
+
+@media only screen and (min-width: 700px) {
+  /*Styles applied to all pages*/
+  header {
+    padding: 10px 3vw 0 3vw;
+  }
+  header img {
+    width: 120px;
+    height: fit-content;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+  .menu-label {
+    display: none;
+  }
+  nav {
+    padding: 15px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+  }
+  nav ul li {
+    padding-right: 8px;
+    border: none;
+    font-size: 20px;
+  }
+  nav.toggle {
+    display: none;
+  }
+
+  button {
+    padding: 20px;
+  }
+
+  button a {
+    font-size: 18px;
+  }
+  footer {
+    padding-bottom: 0;
+    padding-left: 30px;
+  }
+  footer .wrapper {
+    height: fit-content;
+    justify-content: space-between;
+  }
+  footer h6 {
+    font-size: 16px;
+  }
+  footer span {
+    width: 20%;
+  }
+  footer ul {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  footer li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  /*End of styles applied to all pages*/
+
+  /*Styles applied to index.html*/
+  .horizontal-home h2 {
+    font-size: 40px;
+    flex-grow: 1;
+    align-self: flex-end;
+  }
+
+  .home .images {
+    width: fit-content;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+
+  .home .images img:last-child {
+    margin-top: 40px;
+  }
+
+  .home .images img {
+    width: 20%;
+    padding: 15px;
+    border: calc(1.4 * var(--s)) solid #0000;
+    height: fit-content;
+  }
+
+  .home .horizontal-home {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .home p {
+    font-size: 20px;
+  }
+  
+  /*Styles applied to contact.html*/
+  main.contact {
+    padding-left: 15px;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .contact h4,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+
+  .company-info {
+    border-bottom: none;
+    border-right: solid 2px #1a4d86;
+    padding-left: 0;
+  }
+
+  .contact {
+    margin: 30px 0;
+  }
+
+  .contact h4 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .contact ul {
+    font-size: 18px;
+  }
+  .contact form {
+    row-gap: 15px;
+    column-gap: 50px;
+  }
+  .contact form label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .contact form input {
+    padding: 10px;
+  }
+
+  .contact form button {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 50%;
+    padding: 10px;
+  }
+  /*End of styles applied to contact.html*/
+
+  /*Styles applied to gallery.html*/
+  .gallery-container {
+    column-count: 3;
+  }
+
+  main.gallery {
+    align-self: center;
+    width: 80%;
+  }
+
+  .gallery-section {
+    font-size: 24px;
+    border-bottom: 2px solid;
+    text-align: left;
+  }
+  /*End of styles applied to gallery.html*/
+
+  /*Styles applied to classes.html*/
+  div.class-photos {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cards {
+    width: 30%;
+    height: fit-content;
+  }
+
+  .cards h3 {
+    font-size: 100%;
+    color: #1a4d86;
+    text-shadow: none;
+    font-weight: 400;
+  }
+
+  .classes table {
+    width: 50%;
+    float: right;
+  }
+
+  table td {
+    font-size: 0.8em;
+  }
+  table caption {
+    margin: 0.83em 0;
+    padding-top: 1vw;
+  }
+
+  .class-info {
+    width: 30%;
+    display: inline-block;
+  }
+
+  main.classes {
+    display: revert;
+  }
+
+  .sign-up {
+    margin-top: 30px;
+    align-items: flex-start;
+  }
+
+  .sign-up button {
+    padding: 20px 40px;
+  }
+  /*End of styles applied to classes.html*/
+}

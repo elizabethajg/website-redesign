@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Classes</title>
+  </head>
+  <body>
+    <header class="home">
+      <img src="images/logo.png" alt="logo" />
+      <h1>CLASSES</h1>
+    </header>
+
+    <nav>
+      <div class="menu-label">
+        <h3>Menu</h3>
+        <span id="menu-bars"
+          ><a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a
+        ></span>
+      </div>
+      <ul id="nav-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="classes">
+      <div class="class-photos">
+        <article class="cards">
+          <img src="images/img1.jpg" alt="Small glass giftbox ornament" />
+          <h3>Beginner</h3>
+        </article>
+        <article class="cards">
+          <img src="images/img2.jpg" alt="Collection of glass vases" />
+          <h3>Intermediate</h3>
+        </article>
+        <article class="cards">
+          <img src="images/sarah-phillips-9EEi-i8R28Y-unsplash.jpg" alt="Butterfly stained glass art" />
+          <h3>Advanced</h3>
+        </article>
+      </div>
+      <div class="class-info">
+        <h2>Learn to create glass art</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </div>
+      <table class="upcoming">
+        <caption>
+          Upcoming
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Level</th>
+            <th scope="col">Start</th>
+            <th scope="col">Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Name" scope="row">Glass Cutting</td>
+            <td data-label="Level">Intermediate</td>
+            <td data-label="Start">01/12/2022</td>
+            <td data-label="Cost">$99</td>
+          </tr>
+          <tr>
+            <td data-label="Name" scope="row">Glass Foiling</td>
+            <td data-label="Level">Beginner</td>
+            <td data-label="Start">06/12/2022</td>
+            <td data-label="Cost">$59</td>
+          </tr>
+          <tr>
+            <td data-label="Name" scope="row">Mosaic Workshop</td>
+            <td data-label="Level">Intermediate</td>
+            <td data-label="Start">03/12/2022</td>
+            <td data-label="Cost">$89</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="sign-up">
+        <button><a href="#">SIGN UP</a></button>
+        <p><small>Redirects to glassworkclasses.com</small></p>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <span class="hours">
+          <h6>Open Hours</h6>
+          <ul>
+            <li>Weekdays 9-5</li>
+            <li>Saturday 9-12</li>
+            <li>Closed Sunday</li>
+          </ul>
+        </span>
+        <span class="address">
+          <h6>Visit Us</h6>
+          <ul>
+            <li>1234 Road Rd.</li>
+            <li>City, Province</li>
+            <li>ABC 123</li>
+          </ul>
+        </span>
+        <span class="footer-contact">
+          <h6>Get in Touch</h6>
+          <ul>
+            <li>(999)-999-999</li>
+            <li>valleyglasswork@email.com</li>
+          </ul>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>
